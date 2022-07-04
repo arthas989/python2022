@@ -1,23 +1,15 @@
-# program asks user's name
-# cash
-# Y/N
-# program checks if the user has more than or equal to $30
-
-name = input("Enter your name: ")  # string
-money = input("Enter your cash amount: ")  # string
-hungry = input("Are you hungry? (Y/N)")  # string
-
-if hungry == "Y":
-    #print("You are not hungry")
-    if int(money) >= 30:
-        print(f"{name} should go eat breakfast.")
-    else:
-        print(f"{name} is hungry but might not have enough money to buy breakfast")
-elif hungry == "N":
-    #print("You are not hungry")
-    if int(money) >= 30:
-        print(f"{name} has budget but doesn't want to eat breakfast.")
-    else:
-        print(f"{name} has no money but is not hungry.")
-else:  # 流程"其他"的處理
-    print("Please make sure that you enter either Y or N.")
+'''
+票價規則
+<8 => free
+>=8 and < 65 =>300
+>65 => half
+'''
+age = 64
+if age < 8:
+    print("Movie is free for you!!")
+elif 8 <= age < 65:
+    print("You need to pay $300!")
+elif 65 > age >= 8:
+    print("You need to pay $600!!")
+else:
+    print("You only need to pay $150")
