@@ -37,10 +37,14 @@ else:
     Linux系統當中的wc command在計算行數的方式跟我們認知的有些許不同。
     某些計算行數的演算法會把所有文件後方的空白列全部不放入計算，
     有些會全部用1來計，有些會全部計算(像是我課程中演示的方法)。
+    此行是指固定扣掉文件中的最後一行空白
+    若文件中本來就沒有另一行空白就不用扣
     '''
 
     # 假設我是出版社的慣老闆，空白行也要全部排除不計
-    # line_count_list = [l for l in lines if l != ""]
+    # 我們由print(lines)中知道空白行也會被分割成一個 '' list的元素
+    # 所以只要排除'' 就能排除空白行
+    # line_count_list = [l for l in lines if l != '']
     # line_count = len(line_count_list)
     # print(line_count_list)
 
