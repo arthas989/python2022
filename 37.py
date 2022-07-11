@@ -10,6 +10,13 @@
 # print(bin(a))
 # print(bin(b))
 # print(bin(a ^ b ^ c))
+
+a = 61
+b = 60
+print(a)
+print(~a)
+
+
 '''
 a = 61
 b = 60
