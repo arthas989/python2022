@@ -1,3 +1,6 @@
+from random import Random
+
+
 def higherOrder(func):
     func()
 
@@ -33,4 +36,14 @@ def even(num):
 
 myList2 = [12314, 43157, 32789]
 for item in filter(even, myList2):
+    print(item)
+
+print("-------------------")
+
+
+def TrueOrFalse(num):
+    return False
+
+
+for item in filter(TrueOrFalse, myList2):
     print(item)
