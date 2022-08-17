@@ -23,6 +23,7 @@ class Student(People):
     def eat(self, food):
         super().eat()
         print(f"{self.name} is now eating {food}.")
+        # 不自覺寫成self.food
 
 
 student_one = Student("Wilson", 25, 100)
@@ -31,4 +32,3 @@ print(student_one.age)
 student_one.sleep()
 student_one.study()
 student_one.eat("beef")
-student_one

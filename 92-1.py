@@ -1,3 +1,4 @@
+# 92-1.py
 class Robot:
     ingredient = "metal"
 
@@ -23,3 +24,4 @@ print(Robot.ingredient)      # classname.attribute 建議少用，不然改class
 print(my_robot_1.ingredient)  # class attribute
 print(my_robot_1.__class__.ingredient)
 my_robot_1.greet()
+my_robot_1.greet2()

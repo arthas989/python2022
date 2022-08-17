@@ -1,3 +1,4 @@
+# 91-1.py
 class Robot:
     """Robot doctring"""
 
@@ -21,6 +22,7 @@ my_robot_1 = Robot("Wilson", 25)
 print(my_robot_1.name)
 print(my_robot_1.age)
 print(my_robot_1.__doc__)
+print(Robot.__doc__)
 my_robot_1.walk()
 my_robot_1.sleep(3)
 # my_robot_1.test_self()

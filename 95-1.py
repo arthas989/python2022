@@ -1,3 +1,4 @@
+# 95-1.py
 # 最簡單的multiple inheritance
 class C:
     def stuff_c(self):  # 養成習慣記得放self

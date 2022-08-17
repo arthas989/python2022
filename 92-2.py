@@ -1,3 +1,4 @@
+# 92-2.py
 class Circles:
     pi = 3.14159
     all_circles = []
@@ -53,6 +54,8 @@ class Test:
 
 t = Test()
 t.prt()
+# <__main__.Test object at 0x0000022E93B5C5B0>
+# <class '__main__.Test'>
 
 # self可以不寫嗎?
 
@@ -62,4 +65,4 @@ class Test2:
         print("no instance")
 
 
-Test2.prt()
+Test2.prt()  # no instance
