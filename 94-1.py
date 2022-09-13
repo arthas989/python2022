@@ -21,7 +21,7 @@ class Student(People):
     # 覆寫parent class的method 注意要提供需要的parameter
     # 若沒有提供會有錯誤，那要如何呼叫parent class原來的method呢?
     def eat(self, food):
-        super().eat()
+        # super().eat()
         print(f"{self.name} is now eating {food}.")
         # 不自覺寫成self.food
 
@@ -32,3 +32,5 @@ print(student_one.age)
 student_one.sleep()
 student_one.study()
 student_one.eat("beef")
+p = People("Wilson", 25)
+p.eat()
