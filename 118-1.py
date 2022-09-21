@@ -1,4 +1,5 @@
 
+# 118-1.py
 def hello():  # 定義的hello func會儲存於電腦內某個記憶體位址
     print("Hello World")
 

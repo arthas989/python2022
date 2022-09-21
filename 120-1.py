@@ -1,3 +1,4 @@
+# 120-1.py
 # 比較list 及 yield (generator object)用法
 # 使用list
 def cube(n):  # 這樣的寫法 list長度越長越佔記憶體空間

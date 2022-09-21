@@ -1,3 +1,4 @@
+# 119-2.py
 def new_decorator(original_func):
     def wrap_func():
         print("before original function")
@@ -12,3 +13,8 @@ def func_needs_decorator():
 
 
 func_needs_decorator()
+"""
+before original function
+I am a function that needs decorator.
+after original function
+"""

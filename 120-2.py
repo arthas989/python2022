@@ -1,3 +1,4 @@
+# 120-2.py
 # yeild from的用法
 
 def sub_generator(x):
@@ -11,3 +12,7 @@ def gen(y):
 
 for num in gen(3):
     print(num)
+
+# 0
+# 1
+# 4
