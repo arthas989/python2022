@@ -4,11 +4,9 @@ import sqlite3
 conn = sqlite3.connect("datafile.db")
 cursor = conn.cursor()
 
+cursor.execute("""update people set count = :usercount where name = :username""",{"username":"Bob","usercount":39})
+
 result = cursor.execute("select * from people")
-print(result.fetchmany(2))
-
-result = cursor.execute("select * from people where name=:username",{"username":"Grace"})
 print(result.fetchall())
-
 conn.commit()
 conn.close()
