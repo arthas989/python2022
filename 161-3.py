@@ -16,13 +16,11 @@ Session = sessionmaker(bind=engine)
 session = Session()
 metadata.create_all(engine)
 
-# 第一種方式是people.insert().values(XXXX)
-insert_statement = people.insert().values(name="Spencer", count=66)
-print(str(insert_statement))
-# INSERT INTO people (name, count) VALUES (?, ?)
-session.execute(insert_statement)
-session.commit()
+# 更新
+session.execute(people.update().values(count=105).where(people.c.name == "wilson"))
 
-result = session.execute(select([people]))
+# 查詢
+result = session.execute(select([people]).where(people.c.name == "wilson"))
+
 for row in result:
     print(row)

@@ -16,11 +16,18 @@ Session = sessionmaker(bind=engine)
 session = Session()
 metadata.create_all(engine)
 
-# 第一種方式是people.insert().values(XXXX)
-insert_statement = people.insert().values(name="Spencer", count=66)
+# 第二種方式是sql statement放people.insert()，後面選項放dict
+insert_statement = people.insert()
 print(str(insert_statement))
-# INSERT INTO people (name, count) VALUES (?, ?)
-session.execute(insert_statement)
+# INSERT INTO people (id, name, count) VALUES (?, ?, ?)
+# session.execute(insert_statement)
+session.execute(
+    insert_statement,
+    [
+        {"name": "wilson", "count": 35},
+        {"name": "Naleo", "count": 40},
+    ],
+)
 session.commit()
 
 result = session.execute(select([people]))
