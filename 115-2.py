@@ -1,9 +1,8 @@
-def hello():
-    for volume in [1, 2, 3]:
-        print(volume)
-
-    for volme in [4, 5, 6]:
-        print(volume)
-
-
-hello()
+"""docstring
+依建議做修改
+"""
+# 115-2.py
+A = 1
+B = 2
+print(A)
+print(B)

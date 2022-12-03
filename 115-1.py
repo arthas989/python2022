@@ -1,5 +1,5 @@
-"""this module does nothing"""
-A = 1
-B = 2
-print(A)
-print(B)
+#115-1.py
+a = 1
+b = 2
+print(a)
+print(B) #print故意打成大寫B
